@@ -30,7 +30,7 @@ let getWeather = (city = "Simferopol") => {
                 <h2>${data.name}</h2>
                 <h4 class="weather">${iconData.text}</h4>
                 <h4 class="desc">${description}</h4>
-                <img id="current-weather-icon" src="icons/${iconData.icon}" alt="${weatherType}">
+                <img id="current-weather-icon" src="${iconData.icon}" alt="${weatherType}">
                 <h1>${data.main.temp} &#176;</h1>
                 <div id="forecast" class="temp-container"></div>
             `;
@@ -50,7 +50,7 @@ let getWeather = (city = "Simferopol") => {
                 forecastHTML += `
                     <div class="forecast-item">
                         <h4>${time}:00</h4>
-                        <img src="icons/${iconData.icon}" alt="${weatherType}">
+                        <img src="${iconData.icon}" alt="${weatherType}">
                         <h4 class="temp">${forecast.main.temp}&#176;</h4>
                     </div>
                 `;
